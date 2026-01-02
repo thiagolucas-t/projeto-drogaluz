@@ -1,0 +1,274 @@
+<!doctype html>
+<html lang="pt-BR">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Farmácia — Página inicial</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+
+<body>
+  <!-- Top bar (faixa fina) -->
+  <div class="topbar">
+    <div class="container topbar__wrap">
+      <div class="topbar__left">
+        <span class="topbar__item">🚚 Seu produto em casa em até 1 hora</span>
+      </div>
+
+      <div class="topbar__right">
+        <span class="topbar__item">☎️ 9999-9999</span>
+        <span class="topbar__item">📞 (82) 9 9330-6930</span>
+        <span class="topbar__item">🕘 Atendimento 24 horas</span>
+        <span class="topbar__item">📍 Cidade Universitária</span>
+      </div>
+    </div>
+  </div>
+
+  <!-- Header principal -->
+  <header class="header">
+    <div class="container header__wrap">
+      <!-- Logo (placeholder) -->
+      <a class="logo" href="#">
+        <div class="Foto Foto--logo"></div>
+      </a>
+
+      <!-- Busca -->
+      <div class="search">
+        <input class="search__input" type="text" placeholder="Pesquise um produto" />
+        <button class="search__btn" aria-label="Buscar">🔎</button>
+      </div>
+
+      <!-- Ações -->
+      <nav class="actions">
+        <a class="actions__item" href="#">
+          <span class="actions__icon">🛒</span>
+          <span class="actions__text">Carrinho</span>
+        </a>
+
+        <a class="actions__item" href="#">
+          <span class="actions__icon">👤</span>
+          <span class="actions__text">Entrar ou Cadastrar</span>
+        </a>
+      </nav>
+    </div>
+  </header>
+
+  <main>
+    <!-- Categorias -->
+    <section class="section">
+      <div class="container section__head">
+        <h2 class="section__title">Categorias</h2>
+        <a class="section__link" href="#">Ver todas ›</a>
+      </div>
+
+      <div class="container">
+        <div class="categories">
+          <a class="category" href="#">
+            <div class="Foto"></div>
+            <span class="category__label">Beleza</span>
+          </a>
+
+          <a class="category" href="#">
+            <div class="Foto"></div>
+            <span class="category__label">Antioxidantes</span>
+          </a>
+
+          <a class="category" href="#">
+            <div class="Foto"></div>
+            <span class="category__label">Colágenos</span>
+          </a>
+
+          <a class="category" href="#">
+            <div class="Foto"></div>
+            <span class="category__label">Antienvelhecimento</span>
+          </a>
+
+          <a class="category" href="#">
+            <div class="Foto"></div>
+            <span class="category__label">Corporal</span>
+          </a>
+
+          <a class="category" href="#">
+            <div class="Foto"></div>
+            <span class="category__label">Bebês</span>
+          </a>
+        </div>
+      </div>
+    </section>
+
+    <!-- Banner / Carrossel -->
+    <section class="section">
+      <div class="container">
+        <div class="banner" data-carousel>
+          <div class="banner__track" data-track>
+            <!-- Slide 1 -->
+            <article class="banner__slide" data-slide>
+              <div class="Foto Foto--banner"></div>
+            </article>
+
+            <!-- Slide 2 -->
+            <article class="banner__slide" data-slide>
+              <div class="Foto Foto--banner"></div>
+            </article>
+
+            <!-- Slide 3 -->
+            <article class="banner__slide" data-slide>
+              <div class="Foto Foto--banner"></div>
+            </article>
+          </div>
+
+          <button class="banner__nav banner__nav--prev" type="button" aria-label="Anterior" data-prev>‹</button>
+          <button class="banner__nav banner__nav--next" type="button" aria-label="Próximo" data-next>›</button>
+
+          <div class="banner__dots" data-dots>
+            <!-- JS preenche as bolinhas -->
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Ofertas e Promoções -->
+    <section class="section section--tight">
+      <div class="container section__head">
+        <h2 class="section__title">Ofertas e Promoções 🔥</h2>
+        <a class="section__link" href="#">Ver todas ›</a>
+      </div>
+
+      <div class="container">
+        <div class="products">
+          <!-- Card 1 -->
+          <article class="product">
+            <div class="product__media">
+              <div class="Foto"></div>
+              <button class="product__fav" type="button" aria-label="Favoritar">♡</button>
+            </div>
+
+            <div class="product__body">
+              <div class="product__brand">ISDIN</div>
+              <h3 class="product__name">Fotoprotector ISDIN Fusion Water SPF50+, 50ml</h3>
+
+              <div class="product__meta">
+                <div class="stars" aria-label="Avaliação 4 de 5">
+                  ★★★★☆
+                </div>
+                <span class="product__reviews">9</span>
+              </div>
+
+              <div class="product__price">R$ 20,30</div>
+
+              <button class="btn btn--primary" type="button">
+                <span class="btn__icon">🛒</span> Adicionar
+              </button>
+            </div>
+          </article>
+
+          <!-- Card 2 -->
+          <article class="product">
+            <div class="product__media">
+              <div class="Foto"></div>
+              <button class="product__fav" type="button" aria-label="Favoritar">♡</button>
+            </div>
+
+            <div class="product__body">
+              <div class="product__brand">ISDIN</div>
+              <h3 class="product__name">Fotoprotector ISDIN Fusion Water SPF50+, 50ml</h3>
+
+              <div class="product__meta">
+                <div class="stars">★★★★☆</div>
+                <span class="product__reviews">9</span>
+              </div>
+
+              <div class="product__price">R$ 20,30</div>
+
+              <button class="btn btn--primary" type="button">
+                <span class="btn__icon">🛒</span> Adicionar
+              </button>
+            </div>
+          </article>
+
+          <!-- Card 3 -->
+          <article class="product">
+            <div class="product__media">
+              <div class="Foto"></div>
+              <button class="product__fav" type="button" aria-label="Favoritar">♡</button>
+            </div>
+
+            <div class="product__body">
+              <div class="product__brand">ISDIN</div>
+              <h3 class="product__name">Fotoprotector ISDIN Fusion Water SPF50+, 50ml</h3>
+
+              <div class="product__meta">
+                <div class="stars">★★★★☆</div>
+                <span class="product__reviews">9</span>
+              </div>
+
+              <div class="product__price">R$ 20,30</div>
+
+              <button class="btn btn--primary" type="button">
+                <span class="btn__icon">🛒</span> Adicionar
+              </button>
+            </div>
+          </article>
+
+          <!-- Card 4 -->
+          <article class="product">
+            <div class="product__media">
+              <div class="Foto"></div>
+              <button class="product__fav" type="button" aria-label="Favoritar">♡</button>
+            </div>
+
+            <div class="product__body">
+              <div class="product__brand">ISDIN</div>
+              <h3 class="product__name">Fotoprotector ISDIN Fusion Water SPF50+, 50ml</h3>
+
+              <div class="product__meta">
+                <div class="stars">★★★★☆</div>
+                <span class="product__reviews">9</span>
+              </div>
+
+              <div class="product__price">R$ 20,30</div>
+
+              <button class="btn btn--primary" type="button">
+                <span class="btn__icon">🛒</span> Adicionar
+              </button>
+            </div>
+          </article>
+
+          <!-- Card 5 -->
+          <article class="product">
+            <div class="product__media">
+              <div class="Foto"></div>
+              <button class="product__fav" type="button" aria-label="Favoritar">♡</button>
+            </div>
+
+            <div class="product__body">
+              <div class="product__brand">ISDIN</div>
+              <h3 class="product__name">Fotoprotector ISDIN Fusion Water SPF50+, 50ml</h3>
+
+              <div class="product__meta">
+                <div class="stars">★★★★☆</div>
+                <span class="product__reviews">9</span>
+              </div>
+
+              <div class="product__price">R$ 20,30</div>
+
+              <button class="btn btn--primary" type="button">
+                <span class="btn__icon">🛒</span> Adicionar
+              </button>
+            </div>
+          </article>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer class="footer">
+    <div class="container footer__wrap">
+      <span>© Sua Farmácia</span>
+      <span class="footer__muted">Layout base inspirado no seu modelo</span>
+    </div>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
