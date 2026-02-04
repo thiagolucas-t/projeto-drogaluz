@@ -1,0 +1,73 @@
+<!doctype html>
+<html lang="pt-BR">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Login — Farmácia</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+
+<body class="loginPage">
+  <main class="login">
+    <!-- Lado esquerdo (vermelho) -->
+    <section class="login__left">
+      <div class="login__brand">
+        <div class="Foto Foto--loginLogo"></div>
+        <hr class="login__line" />
+        <a class="login__back" href="index.html">‹ Voltar ao site</a>
+      </div>
+
+      <div class="login__copy">©2019-2026 Drogaluz</div>
+    </section>
+
+    <!-- Lado direito (form) -->
+    <section class="login__right">
+      <div class="loginCard">
+        <h1 class="loginCard__title">Iniciar sessão</h1>
+
+        <div class="loginCard__social">
+          <button class="socialBtn socialBtn--fb" type="button">f <span>Facebook</span></button>
+          <button class="socialBtn socialBtn--gg" type="button">G <span>Google</span></button>
+        </div>
+
+        <div class="loginCard__divider"></div>
+
+        <form class="loginForm" action="#" method="post">
+          <label class="field">
+            <span class="field__label">E-mail*</span>
+            <input class="field__input" type="email" placeholder="Digite seu endereço de e-mail" required />
+          </label>
+
+          <label class="field">
+            <span class="field__label">Senha*</span>
+            <div class="field__row">
+              <input class="field__input" id="senha" type="password" placeholder="Digite sua senha" required />
+              <button class="field__toggle" type="button" id="toggleSenha">MOSTRAR</button>
+            </div>
+          </label>
+
+          <a class="loginForm__forgot" href="#">Esqueceu sua senha?</a>
+
+          <button class="loginForm__submit" type="submit">Entrar</button>
+
+          <div class="loginForm__or">
+            <span></span>
+            <small>Cliente novo?</small>
+            <span></span>
+          </div>
+
+          <button class="loginForm__create" type="button">Criar conta</button>
+        </form>
+
+        <div class="loginCard__links">
+          <a href="#">Aviso Legal</a>
+          <a href="#">Política de Cookies</a>
+          <a href="#">Política de Privacidade</a>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <script src="script.js"></script>
+</body>
+</html>

@@ -70,3 +70,22 @@ document.addEventListener("click", (e) => {
   btn.classList.toggle("is-on");
   btn.textContent = btn.classList.contains("is-on") ? "♥" : "♡";
 });
+
+
+
+
+
+/* =============================  TELA DE LOGIN  =============================== */
+
+// Mostrar/ocultar senha (login)
+document.addEventListener("click", (e) => {
+  const btn = e.target.closest("#toggleSenha");
+  if (!btn) return;
+
+  const input = document.querySelector("#senha");
+  if (!input) return;
+
+  const isPassword = input.type === "password";
+  input.type = isPassword ? "text" : "password";
+  btn.textContent = isPassword ? "OCULTAR" : "MOSTRAR";
+});
