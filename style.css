@@ -915,3 +915,63 @@ button, input{ font:inherit; }
   .login__left{ min-height: 240px; }
   .login__line{ width: 100%; }
 }
+
+
+.produto-grid{
+display:grid;
+grid-template-columns: 1fr 1fr;
+gap:40px;
+padding:40px 0;
+}
+
+.produto-imagem img{
+width:100%;
+max-width:350px;
+}
+
+.miniaturas{
+display:flex;
+gap:10px;
+margin-top:20px;
+}
+
+.miniaturas img{
+width:50px;
+border:1px solid var(--line);
+border-radius:6px;
+}
+
+.produto-info h1{
+color:var(--red-700);
+margin-bottom:10px;
+}
+
+.preco{
+margin:20px 0;
+}
+
+.preco-antigo{
+text-decoration:line-through;
+color:var(--muted);
+margin-right:10px;
+}
+
+.preco-atual{
+font-size:28px;
+font-weight:bold;
+}
+
+.btn-carrinho{
+background:#f5a000;
+border:none;
+padding:15px 30px;
+border-radius:30px;
+font-weight:bold;
+cursor:pointer;
+}
+
+.quantidade{
+display:flex;
+gap:10px;
+margin-bottom:20px;
+}

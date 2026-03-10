@@ -89,3 +89,7 @@ document.addEventListener("click", (e) => {
   input.type = isPassword ? "text" : "password";
   btn.textContent = isPassword ? "OCULTAR" : "MOSTRAR";
 });
+
+document.getElementById("btnBuscar").addEventListener("click", function () {
+  window.location.href = "produto.html";
+});
