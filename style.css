@@ -264,8 +264,8 @@ button, input{ font:inherit; }
 /* Produtos */
 .products{
   display:grid;
-  grid-template-columns: repeat(5, 1fr);
-  gap: 14px;
+  grid-template-columns: repeat(4, 1fr); /* 4 por linha */
+  gap: 16px;
 }
 .product{
   background: var(--card);
@@ -917,61 +917,128 @@ button, input{ font:inherit; }
 }
 
 
-.produto-grid{
-display:grid;
-grid-template-columns: 1fr 1fr;
-gap:40px;
-padding:40px 0;
+
+
+/* =========================
+   PLP (Página de produtos)
+========================= */
+
+.breadcrumb{
+  font-size: 12px;
+  color: var(--muted);
+  margin-bottom: 14px;
 }
 
-.produto-imagem img{
-width:100%;
-max-width:350px;
+.plp{
+  display: grid;
+  grid-template-columns: 260px 1fr;
+  gap: 20px;
 }
 
-.miniaturas{
-display:flex;
-gap:10px;
-margin-top:20px;
+.filters{
+  border: 1px solid var(--line);
+  border-radius: var(--radius);
+  padding: 14px;
+  background: #fff;
 }
 
-.miniaturas img{
-width:50px;
-border:1px solid var(--line);
-border-radius:6px;
+.filter-group{
+  display:flex;
+  flex-direction:column;
+  gap:8px;
+  margin-top: 12px;
+  font-size: 13px;
 }
 
-.produto-info h1{
-color:var(--red-700);
-margin-bottom:10px;
+.plp-content{
+  display:flex;
+  flex-direction:column;
+  gap:14px;
 }
 
-.preco{
-margin:20px 0;
+@media (max-width: 900px){
+  .plp{
+    grid-template-columns: 1fr;
+  }
 }
 
-.preco-antigo{
-text-decoration:line-through;
-color:var(--muted);
-margin-right:10px;
+
+
+
+
+/* =========================
+   FILTROS LATERAIS (PLP)
+========================= */
+
+.filters{
+  border: 1px solid var(--line);
+  border-radius: var(--radius);
+  padding: 16px;
+  background: #fff;
+  height: fit-content;
 }
 
-.preco-atual{
-font-size:28px;
-font-weight:bold;
+.filters__header{
+  display:flex;
+  justify-content:space-between;
+  align-items:center;
+  margin-bottom: 12px;
 }
 
-.btn-carrinho{
-background:#f5a000;
-border:none;
-padding:15px 30px;
-border-radius:30px;
-font-weight:bold;
-cursor:pointer;
+.filters__header h3{
+  margin:0;
+  font-size: 14px;
+  color: var(--text);
 }
 
-.quantidade{
-display:flex;
-gap:10px;
-margin-bottom:20px;
+.filters__clear{
+  font-size: 12px;
+  color: var(--red-700);
+  cursor:pointer;
+}
+
+.filter-title{
+  font-weight: 700;
+  margin: 12px 0 8px;
+  font-size: 13px;
+  color: var(--text);
+}
+
+.filter-group label{
+  display:flex;
+  align-items:center;
+  justify-content:space-between;
+  font-size: 13px;
+  color: var(--red-700);
+  margin-bottom: 6px;
+  cursor:pointer;
+}
+
+.filter-group input{
+  margin-right: 8px;
+}
+
+.filter-group span{
+  color: var(--muted);
+  font-size: 12px;
+}
+
+.filter-more{
+  font-size: 12px;
+  color: var(--muted);
+  margin-top: 6px;
+  display:inline-block;
+}
+
+/* PREÇO */
+.price-range{
+  width:100%;
+  margin: 10px 0;
+}
+
+.price-values{
+  display:flex;
+  justify-content:space-between;
+  font-size: 12px;
+  color: var(--red-700);
 }

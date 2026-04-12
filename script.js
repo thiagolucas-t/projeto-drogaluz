@@ -90,6 +90,13 @@ document.addEventListener("click", (e) => {
   btn.textContent = isPassword ? "OCULTAR" : "MOSTRAR";
 });
 
-document.getElementById("btnBuscar").addEventListener("click", function () {
-  window.location.href = "produto.html";
-});
+
+
+
+const btnSearch = document.getElementById("btnSearch");
+
+if (btnSearch) {
+  btnSearch.addEventListener("click", () => {
+    window.location.href = "produtos.html";
+  });
+}

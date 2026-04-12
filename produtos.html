@@ -1,0 +1,220 @@
+<!doctype html>
+<html lang="pt-BR">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Produtos Cosméticos</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+
+<body>
+
+  <!-- Topbar -->
+  <div class="topbar">
+    <div class="container topbar__wrap">
+      <div class="topbar__left">
+        <span class="topbar__item">🚚 Seu produto em casa em até 1 hora</span>
+      </div>
+      <div class="topbar__right">
+        <span class="topbar__item">☎️ 9999-9999</span>
+        <span class="topbar__item">📞 (82) 9 9330-6930</span>
+        <span class="topbar__item">🕘 Atendimento 24 horas</span>
+        <span class="topbar__item">📍 Cidade Universitária</span>
+      </div>
+    </div>
+  </div>
+
+  <!-- Header (igual ao index) -->
+  <header class="header">
+    <div class="container header__wrap">
+      <a class="logo" href="index.html">
+        <div class="Foto Foto--logo"></div>
+      </a>
+
+      <div class="search">
+        <input class="search__input" type="text" placeholder="Pesquise um produto" />
+        <button class="search__btn">🔎</button>
+      </div>
+
+      <nav class="actions">
+        <a class="actions__item" href="#">
+          <span class="actions__icon">🛒</span>
+          <span class="actions__text">Carrinho</span>
+        </a>
+
+        <a class="actions__item" href="login.html">
+          <span class="actions__icon">👤</span>
+          <span class="actions__text">Entrar ou Cadastrar</span>
+        </a>
+      </nav>
+    </div>
+  </header>
+
+  <main class="container section">
+
+    <!-- Breadcrumb -->
+    <div class="breadcrumb">Início / Produtos Cosméticos</div>
+
+    <div class="plp">
+
+      <!-- FILTROS -->
+      <aside class="filters">
+
+  <div class="filters__header">
+    <h3>FILTROS</h3>
+    <a href="#" class="filters__clear">Desmarcar Todos</a>
+  </div>
+
+  <!-- CATEGORIAS -->
+  <div class="filter-group">
+    <div class="filter-title">Categorias</div>
+
+    <label><input type="checkbox"> Colônia <span>(24)</span></label>
+    <label><input type="checkbox"> Corporal <span>(11)</span></label>
+    <label><input type="checkbox"> Cosmético Natural <span>(4)</span></label>
+    <label><input type="checkbox"> Cosmético para homens <span>(32)</span></label>
+    <label><input type="checkbox"> Cuidado capilar <span>(21)</span></label>
+    <label><input type="checkbox"> Cuidado facial <span>(1)</span></label>
+
+    <a href="#" class="filter-more">Mostrar mais 6</a>
+  </div>
+
+  <!-- MARCAS -->
+  <div class="filter-group">
+    <div class="filter-title">Marcas</div>
+
+    <label><input type="checkbox"> 100% Natural <span>(14)</span></label>
+    <label><input type="checkbox"> 5 Hour Energy <span>(11)</span></label>
+    <label><input type="checkbox"> 500 Cosmetics <span>(4)</span></label>
+    <label><input type="checkbox"> A.Vogel <span>(32)</span></label>
+    <label><input type="checkbox"> Actifemme <span>(21)</span></label>
+
+    <a href="#" class="filter-more">Mostrar mais 60</a>
+  </div>
+
+  <!-- PREÇO -->
+  <div class="filter-group">
+    <div class="filter-title">Preço</div>
+
+    <input type="range" min="0" max="300" value="150" class="price-range">
+
+    <div class="price-values">
+      <span>R$ 0</span>
+      <span>R$ 300</span>
+    </div>
+  </div>
+
+</aside>
+
+<!-- PRODUTOS -->
+<section class="plp-content">
+
+  <h1 class="section__title">Produtos Cosméticos</h1>
+
+  <div class="products">
+
+    <!-- Produto 1 -->
+    <article class="product">
+      <div class="product__media">
+        <div class="Foto"></div>
+      </div>
+
+      <div class="product__body">
+        <div class="product__brand">ISDIN</div>
+        <h3 class="product__name">Fotoprotector ISDIN Fusion Water SPF50+, 50ml</h3>
+
+        <div class="product__meta">
+          <div class="stars">★★★★☆</div>
+          <span class="product__reviews">9</span>
+        </div>
+
+        <div class="product__price">R$ 20,30</div>
+
+        <button class="btn btn--primary">
+          🛒 Adicionar
+        </button>
+      </div>
+    </article>
+
+    <!-- Produto 6 -->
+    <article class="product">
+      <div class="product__media">
+        <div class="Foto"></div>
+        <button class="product__fav" type="button">♡</button>
+      </div>
+
+      <div class="product__body">
+        <div class="product__brand">LA ROCHE-POSAY</div>
+        <h3 class="product__name">Effaclar Gel Concentrado Limpeza Facial 150g</h3>
+
+        <div class="product__meta">
+          <div class="stars">★★★★★</div>
+          <span class="product__reviews">21</span>
+        </div>
+
+        <div class="product__price">R$ 89,90</div>
+
+        <button class="btn btn--primary">
+          <span class="btn__icon">🛒</span> Adicionar
+        </button>
+      </div>
+    </article>
+
+    <!-- Produto 7 -->
+    <article class="product">
+      <div class="product__media">
+        <div class="Foto"></div>
+        <button class="product__fav" type="button">♡</button>
+      </div>
+
+      <div class="product__body">
+        <div class="product__brand">NIVEA</div>
+        <h3 class="product__name">Hidratante Facial Nivea Soft 200ml</h3>
+
+        <div class="product__meta">
+          <div class="stars">★★★★☆</div>
+          <span class="product__reviews">15</span>
+        </div>
+
+        <div class="product__price">R$ 29,90</div>
+
+        <button class="btn btn--primary">
+          <span class="btn__icon">🛒</span> Adicionar
+        </button>
+      </div>
+    </article>
+
+    <!-- Produto 8 -->
+    <article class="product">
+      <div class="product__media">
+        <div class="Foto"></div>
+        <button class="product__fav" type="button">♡</button>
+      </div>
+
+      <div class="product__body">
+        <div class="product__brand">VICHY</div>
+        <h3 class="product__name">Protetor Solar Vichy Capital Soleil FPS50 50g</h3>
+
+        <div class="product__meta">
+          <div class="stars">★★★★☆</div>
+          <span class="product__reviews">32</span>
+        </div>
+
+        <div class="product__price">R$ 99,90</div>
+
+        <button class="btn btn--primary">
+          <span class="btn__icon">🛒</span> Adicionar
+        </button>
+      </div>
+    </article>
+
+  </div>
+
+</section>
+
+</div>
+
+  </main>
+
+</body>
+</html>
